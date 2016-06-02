@@ -100,7 +100,7 @@ static inline void SwizzleInstanceMethod(Class c, SEL origSEL, SEL newSEL)
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-    if (![self isKindOfClass:NSClassFromString(@"UIApplicationRotationFollowingController")]) {
+    if (![self isKindOfClass:NSClassFromString(@"UIApplicationRotationFollowingController")] && ![self isKindOfClass:NSClassFromString(@"_UIAlertShimPresentingViewController")]) {
         [[VHeapInspectorManager manager] performSelector:@selector(checkIsDeallocOfVc) withObject:nil afterDelay:1];
         NSLog(@"class == %@",[self class]);
     }
