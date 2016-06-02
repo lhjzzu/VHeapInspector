@@ -1,0 +1,3 @@
+target 'HeapInspector' do
+pod 'AFNetworking'
+end
