@@ -22,6 +22,7 @@ typedef void(^TestBlock)();
 {
     NSObject *object;
     UITableView *tabView;
+    AFHTTPSessionManager *sessionManager;
 }
 @end
 @implementation VSecondViewController
@@ -70,7 +71,7 @@ typedef void(^TestBlock)();
     };
     testBlock();
     //4 没有造成循环引用（AFHTTPSessionManager是单例，破坏了循环,dealloc执行）
-     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
+     sessionManager = [AFHTTPSessionManager manager];
     [sessionManager GET:@"" parameters:@"" progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self test];
         object = [[NSObject alloc] init];
