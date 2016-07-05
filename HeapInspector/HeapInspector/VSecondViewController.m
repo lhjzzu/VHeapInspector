@@ -23,6 +23,7 @@ typedef void(^TestBlock)();
     NSObject *object;
     UITableView *tabView;
     AFHTTPSessionManager *sessionManager;
+    
 }
 @end
 @implementation VSecondViewController
@@ -54,7 +55,7 @@ typedef void(^TestBlock)();
    BlockView *blockView = [[BlockView alloc] init];
     [self.view addSubview:blockView];
     blockView.block = ^(){
-        
+        NSLog(@"eeee %@",blockView);
         [self test];
         object = [[NSObject alloc] init];
 
@@ -64,13 +65,16 @@ typedef void(^TestBlock)();
 //        sSelf->object = [[NSObject alloc] init];
     };
     
+    blockView.block();
     //3 不会造成循环引用, testBlock->self 但是self没有持有testBlock
     TestBlock testBlock = ^(){
+        NSLog(@"11111 %@",testBlock);
         [self test];
         object = [[NSObject alloc] init];
+        NSLog(@"11111 %@",testBlock);
     };
     testBlock();
-    //4 没有造成循环引用（AFHTTPSessionManager是单例，破坏了循环,dealloc执行）
+    //4 没有造成循环引用 因为success以及failure这两个block，并没有被sessionManager直接或间接持有，它们两个相当于临时变量。所以没有造成循环引用
      sessionManager = [AFHTTPSessionManager manager];
     [sessionManager GET:@"" parameters:@"" progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [self test];
@@ -89,8 +93,23 @@ typedef void(^TestBlock)();
     /** 重点:
      *  单就block而言:是否造成内存泄露的根本原因，在于是否造成循环引用。如果不构成循环，那么就不存在内存泄漏.
      */
+    
+    [self getSubImage:5];
+    
 }
 
+
+- (UIImage*)getSubImage:(unsigned long)ulUserHeader
+ {
+        UIImage * sourceImage = [UIImage imageNamed:@"1.png"];
+         CGFloat height = sourceImage.size.height;
+         CGRect rect = CGRectMake(0 + ulUserHeader*height, 0, height, height);
+    
+         CGImageRef imageRef = CGImageCreateWithImageInRect([sourceImage CGImage], rect);
+         UIImage* smallImage = [UIImage imageWithCGImage:imageRef];
+         //CGImageRelease(imageRef)
+         return smallImage;
+ }
 -(void)test {
     
 }

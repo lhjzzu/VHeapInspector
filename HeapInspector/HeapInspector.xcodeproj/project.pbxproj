@@ -22,6 +22,7 @@
 		06A392CE1CF851310081E5A6 /* VThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A392CD1CF851310081E5A6 /* VThirdViewController.m */; };
 		06A392D71CF932F60081E5A6 /* VTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A392D61CF932F60081E5A6 /* VTableViewCell.m */; };
 		06A3931C1CFC2B3C0081E5A6 /* VSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A3931B1CFC2B3C0081E5A6 /* VSecondTableViewCell.m */; };
+		06E3EF351D0176BC00622F56 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06E3EF341D0176BC00622F56 /* 1.png */; };
 		4332519364F8F0718818A8D9 /* libPods-HeapInspector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAC13B2AA21EF8A2BB6FA51 /* libPods-HeapInspector.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		06A392D61CF932F60081E5A6 /* VTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTableViewCell.m; sourceTree = "<group>"; };
 		06A3931A1CFC2B3C0081E5A6 /* VSecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSecondTableViewCell.h; sourceTree = "<group>"; };
 		06A3931B1CFC2B3C0081E5A6 /* VSecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSecondTableViewCell.m; sourceTree = "<group>"; };
+		06E3EF341D0176BC00622F56 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		3C03A5C99B661DEE6273F627 /* Pods-HeapInspector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeapInspector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeapInspector/Pods-HeapInspector.debug.xcconfig"; sourceTree = "<group>"; };
 		4DAFDF3ECF9532BBC6B95BB0 /* Pods-HeapInspector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeapInspector.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeapInspector/Pods-HeapInspector.release.xcconfig"; sourceTree = "<group>"; };
 		6EAC13B2AA21EF8A2BB6FA51 /* libPods-HeapInspector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HeapInspector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 				06A392451CF6CC310081E5A6 /* AppDelegate.h */,
 				06A392461CF6CC310081E5A6 /* AppDelegate.m */,
 				061C9AC11CFEEF2D001008C4 /* BlockView.h */,
+				06E3EF341D0176BC00622F56 /* 1.png */,
 				061C9AC21CFEEF2D001008C4 /* BlockView.m */,
 				06A392481CF6CC310081E5A6 /* ViewController.h */,
 				06A392491CF6CC310081E5A6 /* ViewController.m */,
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A392521CF6CC310081E5A6 /* LaunchScreen.storyboard in Resources */,
+				06E3EF351D0176BC00622F56 /* 1.png in Resources */,
 				06A3924F1CF6CC310081E5A6 /* Assets.xcassets in Resources */,
 				06A3924D1CF6CC310081E5A6 /* Main.storyboard in Resources */,
 			);

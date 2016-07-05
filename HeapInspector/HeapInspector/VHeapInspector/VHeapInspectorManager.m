@@ -9,8 +9,8 @@
 #ifdef DEBUG
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
-#import "VHeapInspectorManager.h"
 #import "VHeapStackInspector.h"
+#import "VHeapInspectorManager.h"
 
 static inline void SwizzleInstanceMethod(Class c, SEL origSEL, SEL newSEL)
 {

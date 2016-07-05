@@ -21,6 +21,10 @@
     btn.backgroundColor = [UIColor redColor];
     btn.frame = CGRectMake(0, 0, 100, 100);
     btn.center = self.view.center;
+    
+    
+    
+    
 }
 
 - (void)btnClick {
