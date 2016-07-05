@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		061C9AC31CFEEF2D001008C4 /* BlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C9AC21CFEEF2D001008C4 /* BlockView.m */; };
 		061C9AC91CFFF71A001008C4 /* VHeapInspectorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C9AC61CFFF71A001008C4 /* VHeapInspectorManager.m */; };
-		061C9ACA1CFFF71A001008C4 /* VHeapStackInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 061C9AC81CFFF71A001008C4 /* VHeapStackInspector.m */; };
 		06A392441CF6CC310081E5A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A392431CF6CC310081E5A6 /* main.m */; };
 		06A392471CF6CC310081E5A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A392461CF6CC310081E5A6 /* AppDelegate.m */; };
 		06A3924A1CF6CC310081E5A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A392491CF6CC310081E5A6 /* ViewController.m */; };
@@ -48,8 +47,6 @@
 		061C9AC21CFEEF2D001008C4 /* BlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockView.m; sourceTree = "<group>"; };
 		061C9AC51CFFF71A001008C4 /* VHeapInspectorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHeapInspectorManager.h; sourceTree = "<group>"; };
 		061C9AC61CFFF71A001008C4 /* VHeapInspectorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHeapInspectorManager.m; sourceTree = "<group>"; };
-		061C9AC71CFFF71A001008C4 /* VHeapStackInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHeapStackInspector.h; sourceTree = "<group>"; };
-		061C9AC81CFFF71A001008C4 /* VHeapStackInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHeapStackInspector.m; sourceTree = "<group>"; };
 		06A3923F1CF6CC310081E5A6 /* HeapInspector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeapInspector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A392431CF6CC310081E5A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		06A392451CF6CC310081E5A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,8 +108,6 @@
 			children = (
 				061C9AC51CFFF71A001008C4 /* VHeapInspectorManager.h */,
 				061C9AC61CFFF71A001008C4 /* VHeapInspectorManager.m */,
-				061C9AC71CFFF71A001008C4 /* VHeapStackInspector.h */,
-				061C9AC81CFFF71A001008C4 /* VHeapStackInspector.m */,
 			);
 			path = VHeapInspector;
 			sourceTree = "<group>";
@@ -396,7 +391,6 @@
 				06A392CE1CF851310081E5A6 /* VThirdViewController.m in Sources */,
 				06A392471CF6CC310081E5A6 /* AppDelegate.m in Sources */,
 				06A392441CF6CC310081E5A6 /* main.m in Sources */,
-				061C9ACA1CFFF71A001008C4 /* VHeapStackInspector.m in Sources */,
 				061C9AC91CFFF71A001008C4 /* VHeapInspectorManager.m in Sources */,
 				06A3931C1CFC2B3C0081E5A6 /* VSecondTableViewCell.m in Sources */,
 				061C9AC31CFEEF2D001008C4 /* BlockView.m in Sources */,

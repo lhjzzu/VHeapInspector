@@ -13,11 +13,14 @@
 /**
  *  这些方法均为内部使用
  */
+
 + (instancetype)manager;
-- (NSSet *)heap;
-- (NSArray *)getRecordedVCArr;
-- (NSDictionary *)getRecordedHeapDic;
 - (NSArray *)recordWithViewController:(NSString *)vcInfo;
-- (NSMutableDictionary *)recordedHeapDicWithRecordedHeap:(NSSet *)recordedHeap withVCInfo:(NSString *)vcInfo;
+- (NSArray *)removeWithViewController:(NSString *)vcInfo;
+/**
+ *  当前点击返回的vc的信息
+ */
+@property (nonatomic,strong) NSString *currentBackVCInfo;
+
 @end
 #endif
